@@ -1,0 +1,1 @@
+variables in python and javascript are case-sensitive

@@ -1,36 +1,55 @@
-# Data Types
+# Data Types (with concatenation, interpolation and type-conversions)
 
-All three languages have strings, integers, floats and boolean  
-Javascript and PHP have arrays and objects  
-Python has lists and dictionaries
+All three languages have **strings**, **integers**, **floats** and **boolean**  
+
+In javascript, integers and floats are collectively grouped under **number**   data-type
+
+Javascript and PHP have **arrays** and **objects**  
+Python has **lists** and **dictionaries**
+
+Python lists and dictionaries are similar to how arrays and objects in javascript/PHP operate
 
 ## Javascript
+typeof()
 
-*let* and *const* are *block scoped*; *var* is *function scoped*.
+parseInt
+parseFloat()
 
 ```javascript
-let z;
-z = 21;
+//concatenation
 
-let x = 12;
+ "2" + "2" //22
+ "2" + 2   //22
 
-const x;   // this line will throw an error; constant variables must always be initialized
+ //Interpolation (done with back ticks)
+ let name = "Faddal",
+     age = 21;
+ 
+ print(`My name is {$name}, I am {$age} years old`) // My name is Faddal, I am 21 years old
 
-var w = 21;
+ //type conversions
+ age.toString() // converts age int to string
 
-x = 21;   // bad practice; this variable will be global no matter where it is declared
 
-
-//  Other tricks in variable declaration
-
-let x = y = 12;
-let x = 12,
-    y = 15;
 ```
 
 ## Python
+type()
+
+when adding an int to a float, python converts the int into a float before the operation in the background. this is called implcit conversion.
 
 variables are only function-scoped
+
+when devision takes place between 2 integers, the output is a float
+
+when you multiply an int and a string, the string is repeated the number of times the int...2 * "me" : "meme"
+
+cant multiply a string and a float
+
+to add a string to a number, you have to explicityly convert the number to a string
+
+print("combining with a " + str(12))
+we can also do print("combining with a", 12)
 
 ```python
 

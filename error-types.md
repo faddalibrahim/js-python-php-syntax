@@ -8,8 +8,8 @@ like print(name) when name hasnt been defined or blow()
 syntax error: when you use a wrong syntax like a symbol
 instead of and, i use &&Val
 
-ValueError
+ValueError name = "me" name.index("g")
 
-IndexError
+IndexError : when we try to access an out of bound element in a string or list. example name = "Faddal" print(name[12])
 
 UnboundLocalError

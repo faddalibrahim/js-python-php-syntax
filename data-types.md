@@ -57,6 +57,20 @@ print("combining with a " + str(12))
 we can also do print("combining with a", 12)
 
 ```python
+#Strings
+name = "Faddal"
+print(name[0])
+
+# negative indexing to access items in a strings
+name[-1] #l
+
+# slicing a string
+name[1:4] # add
+name[:4] # Fadd
+name[3:] # dal
+
+#some methods
+name.index("F") #returns index of the letter
 
 ```
 

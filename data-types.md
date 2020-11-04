@@ -2,10 +2,15 @@
 
 All three languages have **strings**, **integers**, **floats** and **boolean**  
 
+len(string) returns length of string in python, string.length in javascript
+
 In javascript, integers and floats are collectively grouped under **number**   data-type
 
 Javascript and PHP have **arrays** and **objects**  
-Python has **lists** and **dictionaries**
+
+Python has **lists**, **tuples** and **dictionaries**
+
+**Undefined** in javascript is similar to python's **None** type
 
 Python lists and dictionaries are similar to how arrays and objects in javascript/PHP operate
 

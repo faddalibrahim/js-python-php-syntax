@@ -7,6 +7,10 @@
 def myfunc(name):  
     print("my name is", name)
 
+# with default parameter
+def myfunc(name="Fadlullah"):  
+    print("my name is", name)
+
 # python functions return None by default
 result = myfunc("Mufti")
 print(result) # None

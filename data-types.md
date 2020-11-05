@@ -71,6 +71,21 @@ name[3:] # dal
 
 #some methods
 name.index("F") #returns index of the letter
+name.strip()
+name.count("a") #count occrrences of a substring or letter
+name.endsWith("al")
+name.isnumeric("1234")
+name.isalpha("df")
+"".join(["a","b","c"])
+
+# if you try to access a non-exisitng value in a string, it throws a value error
+name.index("z") # value error here
+
+#check if a substring is present in a string
+"ad" in name # true
+
+# formatting strings
+"Hello my name is {}. I am {} years".format(name,age)
 
 ```
 

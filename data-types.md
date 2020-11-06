@@ -19,7 +19,7 @@ typeof()
 
 parseInt
 parseFloat()
-
+ 
 ```javascript
 //concatenation
 
@@ -77,6 +77,8 @@ name.endsWith("al")
 name.isnumeric("1234")
 name.isalpha("df")
 "".join(["a","b","c"])
+"this is a string".split()
+string.replace(old, new)
 
 # if you try to access a non-exisitng value in a string, it throws a value error
 name.index("z") # value error here
@@ -86,6 +88,45 @@ name.index("z") # value error here
 
 # formatting strings
 "Hello my name is {}. I am {} years".format(name,age)
+"Hello my name is {name}. I am {age} years".format(name="Blah Blah",age="67")
+"Price: ${:.2f} Tax : ${:.2f}".format(7.5,8.175) #Price : $7.50 Tax : $8.18
+"{:>3} F {:>3.2f}"
+'{:d}'.format(10.5) → '10'
+'{:.2s}'.format('Python') → 'Py'
+'{:<6s}'.format('Py') → 'Py    '
+'{:>6s}'.format('Py') → '    Py'
+'{:^6s}'.format('Py') → '  Py ' # string centered in that many spaces
+
+first = "apple"
+second = "banana"
+third = "carrot"
+
+"{0} {2} {1}".format(first, second, third)
+
+"""Outputs:
+apple carrot banana
+"""
+
+
+>>> name = "Micah"
+
+>>> print(f'Hello {name}')
+
+Hello Micaah
+
+
+# LISTS
+.append()
+.insert(index, item-to-add)
+.remove("melon")
+.pop(index)
+.extend(other lists)
+concatenate lists with +
+
+for i in range()
+for item in items
+for index,item in enumerate(list) # returns a tuple of the index and item
+
 
 ```
 

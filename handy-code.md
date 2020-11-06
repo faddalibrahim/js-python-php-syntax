@@ -53,4 +53,14 @@ print(is_palindrome("Never Odd or Even")) # Should be True
 print(is_palindrome("abc")) # Should be False
 print(is_palindrome("kayak")) # Should be True
 
+
+#conting how many times each letter appears in a string
+def count_letters(text):
+  result = {}
+  for letter in text:
+    if letter not in result:
+      result[letter] = 0
+    result[letter] += 1
+  return result
+
 ```

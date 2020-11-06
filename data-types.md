@@ -127,6 +127,25 @@ for i in range()
 for item in items
 for index,item in enumerate(list) # returns a tuple of the index and item
 
+#DICTIONARIES
+
+You can use [numbers, booleans, strings, tuples] data type as key in python dictionaries
+
+del dictt[key] #deletes an item from dictionary
+use in to check if a key exists
+
+if you loop through a dictionary, you are looping through the keys
+
+if you wanna return both, 
+for key,value in dictt.items()
+
+dictt.keys()
+dictt.values()
+
+dictt.clear()
+
+dict.update(other_dictt) #Updates the dictionary with the items coming from the other dictionary. Existing entries will be replaced; new entries will be added.
+
 
 ```
 

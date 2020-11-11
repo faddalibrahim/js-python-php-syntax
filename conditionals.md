@@ -1,1 +1,1 @@
-pretty much the same in all langau
+conditionals are pretty much the same in all programming languages

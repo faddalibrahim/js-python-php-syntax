@@ -4,6 +4,6 @@ performing operations on different data types
 
 
 ```python
-python logical operators use : and, or also has not plus !=
+python logical operators use : and, or also has not plus !=  in
 javascipt use &&, ||
 ```

@@ -1,39 +1,48 @@
-# Data Types (with concatenation, interpolation and type-conversions)
+# Data Types  
 
-All three languages have **strings**, **integers**, **floats** and **boolean**  
+## Javascript  
 
-len(string) returns length of string in python, string.length in javascript
+javascript groups floats and integers under the **Number** data type  
+**back ticks** can be used to write **multiline** strings, in python, we use **tripple quotes**
 
-In javascript, integers and floats are collectively grouped under **number**   data-type
-
-Javascript and PHP have **arrays** and **objects**  
-
-Python has **lists**, **tuples** and **dictionaries**
-
-**Undefined** in javascript is similar to python's **None** type
-
-Python lists and dictionaries are similar to how arrays and objects in javascript/PHP operate
-
-## Javascript
-typeof()
-
-parseInt
-parseFloat()
- 
 ```javascript
+String
+Number -- Infinity, NaN
+null
+undefined (similar to None in python)
+Boolean
+Object -- Array
+
+//checking data type
+
+typeof "i am a string" //string
+typeof 24             //number
+
 //concatenation
 
  "2" + "2" //22
  "2" + 2   //22
 
- //Interpolation (done with back ticks)
+//Interpolation  
+
  let name = "Faddal",
      age = 21;
- 
- print(`My name is {$name}, I am {$age} years old`) // My name is Faddal, I am 21 years old
+
+ print(`Name : {$name}; Age : {$age}`) // Name : Faddal; Age : 21
 
  //type conversions
+
  age.toString() // converts age int to string
+ age + ""      // adding a number to a string concatenates them
+
+ let string_age = "21"
+ +string_age //converts it to a number, if its invalid, NaN
+ parseInt(string_age)
+ parseFloat(string_age)
+
+ toFixed -- decimal places
+ toPrecision -- significant figures
+ toExponential -- 
 
 
 ```
@@ -45,18 +54,32 @@ when adding an int to a float, python converts the int into a float before the o
 
 variables are only function-scoped
 
-when devision takes place between 2 integers, the output is a float
 
-when you multiply an int and a string, the string is repeated the number of times the int...2 * "me" : "meme"
 
-cant multiply a string and a float
 
-to add a string to a number, you have to explicityly convert the number to a string
-
-print("combining with a " + str(12))
-we can also do print("combining with a", 12)
+we can also do 
 
 ```python
+integer -- int
+float -- float
+string -- str
+
+list
+dictionary -- dict
+tuple
+Set
+
+None -- NoneType
+
+# checking data type
+type("string here") # <class 'str'>
+
+# concatenation
+print("combining with a " + str(12))
+print("combining with a", 12)
+
+# interpolation / Formatting
+
 #Strings
 name = "Faddal"
 print(name[0])

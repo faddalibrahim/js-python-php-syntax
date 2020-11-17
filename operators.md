@@ -15,6 +15,8 @@ when you multiply an int and a string, the string is repeated the number of time
 
 cant multiply a string and a float
 
+when adding an int to a float, python converts the int into a float before the operation in the background. this is called implcit conversion.
+
 ```python
 
 

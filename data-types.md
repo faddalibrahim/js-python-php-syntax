@@ -32,32 +32,38 @@ typeof 24             //number
 
  //type conversions
 
- age.toString() // converts age int to string
- age + ""      // adding a number to a string concatenates them
+ age.toString()
+ age + ""
 
- let string_age = "21"
- +string_age //converts it to a number, if its invalid, NaN
- parseInt(string_age)
- parseFloat(string_age)
+ const string_age = "21"
+ +string_age     //converts to number if the string is numeric
 
- toFixed -- decimal places
- toPrecision -- significant figures
- toExponential -- 
+ const value = "45.3f"
+ parseInt(string_age)       //45
+ parseFloat(string_age)     //45.3
+
+ const num = "98.7"
+
+//  decimal places goes in the bracket
+ num.toFixed(0) // 99
+ num.toFixed(1) // 99.7
+ num.toFixed(2) // 99.70
+
+// significant figures foes in the bracket
+ num.toPrecision(0) //error
+ num.toPrecision(1) // 1e+2 (100)
+ num.toPrecision(2) // 99
+
+//  raised to what power of 10
+ num.toExponential(0) // 1e+2 (100)
+ num.toExponential(1) // 9.9e+1 (99)
+ num.toExponential(2) // 9.87e+1 (9.87 * 10^1)
+ num.toExponential(3) // 9.87e+2 (9.870 * 10^2)
 
 
 ```
 
 ## Python
-type()
-
-when adding an int to a float, python converts the int into a float before the operation in the background. this is called implcit conversion.
-
-variables are only function-scoped
-
-
-
-
-we can also do 
 
 ```python
 integer -- int
@@ -79,46 +85,19 @@ print("combining with a " + str(12))
 print("combining with a", 12)
 
 # interpolation / Formatting
-
-#Strings
 name = "Faddal"
-print(name[0])
+print(f'Hello {name}') # Hello Faddal
 
-# negative indexing to access items in a strings
-name[-1] #l
 
-# slicing a string
-name[1:4] # add
-name[:4] # Fadd
-name[3:] # dal
-
-#some methods
-name.index("F") #returns index of the letter
-name.strip()
-name.count("a") #count occrrences of a substring or letter
-name.endsWith("al")
-name.isnumeric("1234")
-name.isalpha("df")
-"".join(["a","b","c"])
-"this is a string".split()
-string.replace(old, new)
-
-# if you try to access a non-exisitng value in a string, it throws a value error
-name.index("z") # value error here
-
-#check if a substring is present in a string
-"ad" in name # true
-
-# formatting strings
 "Hello my name is {}. I am {} years".format(name,age)
 "Hello my name is {name}. I am {age} years".format(name="Blah Blah",age="67")
 "Price: ${:.2f} Tax : ${:.2f}".format(7.5,8.175) #Price : $7.50 Tax : $8.18
 "{:>3} F {:>3.2f}"
-'{:d}'.format(10.5) → '10'
-'{:.2s}'.format('Python') → 'Py'
-'{:<6s}'.format('Py') → 'Py    '
-'{:>6s}'.format('Py') → '    Py'
-'{:^6s}'.format('Py') → '  Py ' # string centered in that many spaces
+'{:d}'.format(10.5) # '10'
+'{:.2s}'.format('Python') # 'Py'
+'{:<6s}'.format('Py') # 'Py    '
+'{:>6s}'.format('Py') # '    Py'
+'{:^6s}'.format('Py') # '  Py ' # string centered in that many spaces
 
 first = "apple"
 second = "banana"
@@ -130,12 +109,36 @@ third = "carrot"
 apple carrot banana
 """
 
+#Strings
+name = "Faddal"
 
->>> name = "Micah"
+# negative indexing to access items in a strings
+name[-1] #l
 
->>> print(f'Hello {name}')
+# slicing a string
+name[1:4] # add
+name[:4] # Fadd
+name[3:] # dal
 
-Hello Micaah
+#some methods
+name.index("F") #returns index of the letter
+name.strip() # works like trim in javascript
+name.count("a") #count occrrences of a substring or letter
+name.endsWith("al")
+name.isnumeric("1234") # checks if string is numeric
+name.isalpha("df") # check if string is only alphabets
+"".join(["a","b","c"])
+"this is a string".split() # splits into a lits
+string.replace(old, new) # replace parts of string with new
+
+# if you try to access a non-exisitng value in a string, it throws a value error
+name.index("z") # value error here
+
+#check if a substring is present in a string
+"ad" in name # true
+
+
+
 
 
 # LISTS
